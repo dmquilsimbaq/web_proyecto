@@ -1,0 +1,13 @@
+creacion proyecto 
+	* composer create-project symfony/website-skeleton nombre_del_proyecto
+desactivar debugg
+ruta: C:\xampp\htdocs\proyecto_core\config\packages\web_profiler.yaml
+	* strict_variables: false
+ruta: C:\xampp\htdocs\proyecto_core\config\packages\twig.yaml
+	* when@dev:
+		web_profiler:
+			toolbar: false
+configuracion de base de datos
+	* 
+creacion de cotroladores
+	* php bin/console make:controller NombreDelControlador
