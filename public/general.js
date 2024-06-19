@@ -1,7 +1,9 @@
 async function consultar(t, r = "GET", n = null, o = "") {
   return await new Promise((s, a) => {
-    "ws" == o && (o = "http://localhost/ws_core/public/index.php/"),
-      "" == o && (o = "http://localhost/web_proyecto/public/index.php/");
+    // "ws" == o && (o = "http://localhost/ws_core/public/index.php/"),
+    "ws" == o && (o = "https://wscore-production.up.railway.app/public/"),
+      "" == o && (o = "webproyecto-production.up.railway.app/");
+    // "" == o && (o = "http://localhost/web_proyecto/public/index.php/");
     try {
       $.ajax({
         type: r,
